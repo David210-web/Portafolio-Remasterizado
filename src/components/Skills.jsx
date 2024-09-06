@@ -19,7 +19,7 @@ import Mysql from '../assets/mysql.png';
 //imagenes de habilidades extras
 import ReactNativePic from '../assets/reactnative.png';
 import gitPic from '../assets/git.png';
-import githubPic from '../assets/Github.png';
+import githubPic from '../assets/GitHub.png';
 import firebasePic from '../assets/firebase.png';
 import SolidPic from '../assets/solid.png';
 

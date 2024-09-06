@@ -1,0 +1,81 @@
+{
+  "en": {
+    "menu": ["About", "Services", "Skills", "Projects", "Contact me"],
+    "subtitle": "Web developer",
+    "about": {
+      "part1": "I am a software development enthusiast with a focus on problem-solving and creativity. Throughout my university career, online courses, and personal projects, I have developed solid skills in languages such as Java, C#, SQL, JavaScript, and HTML/CSS. As a freelancer, I specialize in delivering comprehensive solutions, from creating REST APIs and microservices on the backend to developing attractive and responsive interfaces on the frontend.",
+      "part2": "  My approach is not only centered on creating new functionalities but also on improving and refactoring existing code to adhere to industry best practices. Although I lack experience working in companies, my ability to learn quickly and my passion for programming enable me to tackle complex challenges with enthusiasm. In my spare time, I continue to learn new technologies and refine my skills to provide increasingly effective and creative solutions."
+    },
+    "services": {
+      "backend": "Design and development of REST APIs, microservices, and server-side logic using best practices in architecture and security. Whether you need an API for your mobile application or a microservices system for your platform, I can help you build it efficiently and scalably.",
+      "frontend": "Creation of modern, visually appealing user interfaces that enhance the user experience. I ensure that each project is optimized for various devices and browsers, providing a consistent and enjoyable experience.",
+      "database": "Design, implementation, and management of relational and non-relational databases. I can optimize your queries' performance and ensure data integrity, using technologies such as SQL Server, MySQL, MongoDB, and more.",
+      "refactor": "Do you have legacy code or want to improve the quality of your current code? I can help you refactor and optimize your code following best practices, making your application more maintainable and efficient."
+    },
+    "projects": {
+      "project1":{
+        "title": "API REST .NET CORE",
+        "description": "A RESTful API using .NET Core 8 that manages users with JWT and bcrypt password hashing for accessing a protected route with JWT."
+      },
+      "project2":{
+        "title": "API REST EXPRES (Node.js)",
+        "description": "A RESTful API using Express.js that manages users with JWT and bcrypt password hashing for accessing a protected route with JWT."
+      },
+      "project3":{
+        "title": "TO-DO LIST React Native",
+        "description": "A to-do list app made using React Native that uses Firebase for authentication and Firestore for data storage."
+
+      },
+      "project4":{
+        "title": "Collegue System ASP.NET",
+        "description": "A school management system using ASP.NET Core 5 that allows you to manage student grades, enrollment, subjects, teachers, etc."
+      }
+    },
+    "footer": {
+      "title": "Would you like to hire me for a project?",
+      "subtitle": "You can submit an email",
+      "social":"Another social network",
+      "copyright": "All the right reserved"
+    }
+  }
+  ,
+  "es": {
+    "menu": ["Sobre mi", "Servicios", "Habilidades", "Proyectos", "Contactame"],
+    "subtitle": "Desarrollador web",
+    "about": {
+      "part1": "Soy un entusiasta del desarrollo de software con un enfoque en la resolución de problemas y la creatividad. A lo largo de mi carrera universitaria, cursos en línea, y proyectos personales, he adquirido habilidades sólidas en lenguajes como Java, C#, SQL, JavaScript y HTML/CSS. Como freelancer, me he especializado en ofrecer soluciones completas, desde la creación de API's REST y microservicios en el backend hasta el desarrollo de interfaces atractivas y responsivas en el frontend.",
+      "part2": "Mi enfoque no solo se centra en la creación de nuevas funcionalidades, sino también en mejorar y refactorizar código existente para seguir las mejores prácticas de la industria. A pesar de no tener experiencia trabajando en empresas, mi capacidad de aprendizaje rápido y mi pasión por la programación me permiten enfrentar desafíos complejos con entusiasmo. En mi tiempo libre, sigo aprendiendo nuevas tecnologías y perfeccionando mis habilidades para ofrecer soluciones cada vez más eficaces y creativas."
+    },
+    "services": {
+      "backend": "Diseño y desarrollo de API's REST, microservicios, y lógica de servidor utilizando las mejores prácticas en arquitectura y seguridad. Ya sea que necesites una API para tu aplicación móvil o un sistema de microservicios para tu plataforma, puedo ayudarte a construirlo de manera eficiente y escalable.",
+      "frontend": "Creación de interfaces de usuario modernas y visualmente atractivas que mejoran la experiencia del usuario. Me aseguro de que cada proyecto esté optimizado para diferentes dispositivos y navegadores, proporcionando una experiencia consistente y agradable.",
+      "database": "Diseño, implementación y gestión de bases de datos relacionales y no relacionales. Puedo optimizar el rendimiento de tus consultas y asegurar la integridad de los datos, utilizando tecnologías como SQL Server, MySQL, MongoDB, y más",
+      "refactor": "¿Tienes código heredado o quieres mejorar la calidad de tu código actual? Te ayudo a refactorizar y optimizar tu código siguiendo las mejores prácticas, para que tu aplicación sea más mantenible y eficiente."
+    },
+    "projects": {
+      "project1":{
+        "title": "API REST .NET CORE",
+        "description": "API RESTful utilizando .net core 8 que permite la gestion de usuarios con JWT y el hasheo de contraseñas con Bcrypt para acceder a una ruta protegida mediante el JWT"
+      },
+      "project2":{
+        "title": "API REST EXPRES (Node.js)",
+        "description": "API RESTful utilizando el framework espress de node js que permite la gestion de usuarios con JWT y el hasheo de contraseñas con Bcrypt para acceder a una ruta protegida mediante el JWT  "
+      },
+      "project3":{
+        "title": "TO-DO LIST React Native",
+        "description": "To do list hecha para version movil con react native utilizando los servicios firebase de google y la base de datos nosql firestore"
+
+      },
+      "project4":{
+        "title": "Sistema de colegio ASP.NET",
+        "description": "Sistema de gestor de colegio o institucion academica que nos permite administrar las notas, matriculas,materias, profesores etc mediante roles de usuario"
+      }
+    },
+    "footer": {
+      "title": "¿Te gustaria contratarme para un proyecto?",
+      "subtitle": "Puedes enviarme un correo",
+      "social":"Otras redes sociales",
+      "copyright": "Todos los derechos reservados"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Clase para aplicar animación de desvanecimiento */
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+
+.banner_container h1{
+    animation: 
+    typing 2s steps(15), 
+    blink 0.4s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    
+}
+
+@keyframes blink {
+   50%{border-color: transparent;}
+}
+
+/* Animación de desplazamiento para las líneas */
+.top_line {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.bottom_line {
+    animation: slideInRight 0.5s ease-out;
+}
+@keyframes slideInLeft {
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+/* Cambia el color de las líneas en hover */
+.top_line, .bottom_line {
+    transition: background-color 0.3s ease;
+}
+
+.top_line:hover, .bottom_line:hover {
+    background-color: rgb(172, 175, 7); /* Cambia el color a tu gusto */
+}
+
+
+/* Animación de escala para la imagen de perfil */
+.profile_container img {
+    animation: scaleUp 1s ease-out;
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animación de movimiento para el texto */
+/* .text-container h1, .text-container h4 {
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+} */
+
+/* Animación de desplazamiento horizontal en hover */
+ .desplazamiento {
+    transition: transform 0.3s ease;
+}
+
+ .desplazamiento:hover {
+    transform: translateX(10px);
+}
+
+

@@ -1,0 +1,382 @@
+body {
+  background-color: #131313;
+  color: #fff;
+  /* user-select: none; */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px; /* Asegúrate de tener suficiente espacio */
+  background-color: #131313;
+  color: #fff;
+  height: 60px; /* Define una altura fija */
+}
+
+.menu section {
+  display: flex;
+  align-items: center; /* Asegura que el contenido dentro de la sección esté centrado */
+  height: 100%; /* Extiende la altura al 100% del contenedor */
+}
+
+
+
+.menu ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 20px 20px 10px 20px; /* Aumenta el espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  height: 100%; /* Asegura que el ul ocupe toda la altura del menú */
+}
+
+/* Efecto hover para los enlaces del menú */
+.menu ul a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  position: relative;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.menu ul a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease; /* Animación para la línea */
+}
+
+.menu ul a:hover {
+  color: #ffd700; /* Cambia el color del texto al hacer hover */
+}
+
+.menu ul a:hover::before {
+  width: 100%; /* Extiende la línea al 100% del enlace */
+  left: 0; /* Ajusta la posición para cubrir todo el enlace */
+}
+
+.menu span{
+  display: none;
+}
+
+/* Banner */
+.banner_container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg-header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  opacity: 0.9;
+}
+
+.banner_container h1 {
+  font-weight: bolder;
+  color: white;
+  overflow: hidden;
+  border-right: 4px solid #fff;
+  width: 100%;
+  white-space: nowrap;
+  /* animation: 
+    typing 2s steps(15), 
+    blink 0.4s step-end infinite alternate; */
+}
+
+/* @keyframes typing {
+    from { width: 0; }
+    
+}
+
+@keyframes blink {
+   50%{border-color: transparent;}
+} */
+
+.text-container {
+  position: relative;
+}
+
+/* Línea izquierda */
+.top_line {
+  display: block;
+  width: 150px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  margin-bottom: 10px;
+}
+
+/* Línea derecha */
+.bottom_line {
+  display: block;
+  width: 150px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+}
+
+.banner_container h4 {
+  font-weight: 400;
+  color: #ffd700;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.profile_container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.profile_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* main */
+.text-title
+{
+    border-bottom: 2px solid #ffd700;
+    border-top: 2px solid #ffd700;
+    padding-bottom: 10px;
+}
+
+.about p{
+    line-height: 2rem;
+}
+
+.services_container {
+  margin-top: 20px;
+}
+
+.items-selector {
+  display: flex;
+  gap: 25px; /* Aumenta el espacio entre los botones */
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.item {
+  background-color: #7700ff;
+  color: white;
+  padding: 15px 30px; /* Aumenta el tamaño del botón */
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+.item h3 {
+  margin: 0;
+  font-size: 20px; /* Aumenta el tamaño de la fuente */
+}
+
+.services-description {
+  border-bottom: 2px dashed #fff;
+  border-top: 2px dashed #fff;
+  text-align: right;
+  padding: 10px;
+  /* border-radius: 13px; */
+
+  /* Animaciones */
+  opacity: 0; /* Inicia oculta */
+  transform: translateY(10px); /* Desplazada ligeramente hacia abajo */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Animación suave */
+}
+
+.services-description.show {
+  opacity: 1; /* Se muestra */
+  transform: translateY(0); /* Posición original */
+}
+
+/* Skills */
+
+.skills-slider{
+  margin-top: 25px;
+  border-top: 2px dashed #fff;
+  border-bottom: 2px dashed #fff;
+  /* border-radius: 12px; */
+}
+
+.skill-section {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+}
+
+.img_container img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.skills-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+/* projects  */
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin: 15px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0; /* Cambio sutil de color al hacer hover */
+}
+
+.card-img{
+  margin:  auto;
+  width: 200px;
+  height: 200px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.card:hover .card-img {
+  transform: rotate(10deg) scale(1.1); /* Rota y agranda el ícono al hacer hover */
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: #1e90ff; /* Cambia el color del título al hacer hover */
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #1c86ee;
+  transform: scale(1.05); /* Agranda el botón ligeramente al hacer hover */
+}
+
+/* Animación de entrada (fadeInUp) */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #131313;
+  animation: fadeIn 0.8s ease; /* Animación de entrada */
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Animación de entrada del contenedor (fadeIn) */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+/* Footer */
+
+footer{
+  background-color: #0B0A0A;
+  padding: 50px 0;
+}
+
+.emailDirection{
+  text-decoration: none;
+  color: #ffd700;
+}
+
+.linkedin-icon{
+  margin: auto;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #393737;
+}

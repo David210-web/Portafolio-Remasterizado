@@ -5,7 +5,7 @@ import Card from "./Card";
 import ApiImg from '../assets/apiRestLogo.png'
 import NetCorePic from '../assets/netcore.png';
 import ReactNativePic from '../assets/react.png';
-import githubPic from '../assets/Github.png';
+import githubPic from '../assets/GitHub.png';
 
 function Projects({isEnglish,translation}) {
   return (

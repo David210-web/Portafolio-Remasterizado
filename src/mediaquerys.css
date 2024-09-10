@@ -36,6 +36,7 @@
   .profile_container {
     width: 150px;
     height: 150px;
+    
   }
 
   .menu span{
@@ -89,10 +90,7 @@
     margin-top: 10px;
   }
   
-  .btn{
-    margin-top: 50px;
-    /* margin-bottom: 10px; */
-  }
+  
 
   .menu span
   {
@@ -151,6 +149,7 @@
   .profile_container {
     width: 100px;
     height: 100px;
+    margin-top: 20px;
   }
 }
 

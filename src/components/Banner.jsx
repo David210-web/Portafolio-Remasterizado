@@ -7,16 +7,14 @@ function Banner({isEnglish,translation}) {
   return (
     <div className='banner_container'>
         <img src={bgHeader} alt="" className='bg-header'/>
-        <section className='text-container'>
+        <section className='text-container d-flex flex-column justify-content-center'>
             <h1 className='display-1 fade-in'>David Castillo</h1>
             <div className="line-container">
                 <span className='top_line'></span>
                 <h4 className='display-4 fade-in desplazamiento'>{isEnglish ? translation.en.subtitle : translation.es.subtitle}</h4>
                 <span className='bottom_line'></span>
             </div>
-            <button className='btn btn-primary mx-auto d-block'>
-                {isEnglish ? "Download" : "Descargar"} CV
-            </button>
+            
         </section>
         <section className='profile_container'>
             <img src={profilePic} alt="" />

@@ -1,5 +1,7 @@
 import React from "react";
 import TitleSection from "./TitleSection";
+import curriculum from '../assets/Curriculum vitae.pdf'
+
 
 function AboutMe({isEnglish,translation}) {
   return (
@@ -11,8 +13,10 @@ function AboutMe({isEnglish,translation}) {
         </p>
         <p className="text-lg-end mt-2">
         {isEnglish ? translation.en.about.part2 : translation.es.about.part2}
-
         </p>
+        <a href={curriculum} className='btn btn-primary'>
+                {isEnglish ? "Download" : "Descargar"} CV
+            </a>
       </div>
     </>
   );

@@ -25,7 +25,7 @@ function Menu({ isEnglish, toggleLanguage, translation }) {
       <ul className={!isResponsive ? "responsive" : ""}>
         {menuItems.map((item, index) => (
           <li key={index}>
-            <a href="#" className="fade-in">
+            <a href={'#' + item} className="fade-in">
               {item}
             </a>
           </li>

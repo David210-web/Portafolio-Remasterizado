@@ -9,7 +9,7 @@ import githubPic from '../assets/GitHub.png';
 
 function Projects({isEnglish,translation}) {
   return (
-    <>
+    <div id={isEnglish ? translation.en.menu[3] : translation.es.menu[3]}>
       <TitleSection title={isEnglish ? translation.en.menu[3] : translation.es.menu[3]} />
       <div className="projects-container">
         <Card isEnglish={isEnglish}
@@ -47,7 +47,7 @@ function Projects({isEnglish,translation}) {
         />
       </div>
       
-    </>
+    </div>
   );
 }
 

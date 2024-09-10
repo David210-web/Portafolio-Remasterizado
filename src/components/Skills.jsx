@@ -67,7 +67,7 @@ function Skills({isEnglish}) {
 
   return (
     <>
-    <div className="container">
+    <div className="container" id={isEnglish ? 'Skills' : 'Habilidades'}>
       <TitleSection title={isEnglish ? 'Skills' : 'Habilidades'} />
       <Slider {...settings} className="skills-slider">
         <div>

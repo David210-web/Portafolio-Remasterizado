@@ -7,7 +7,7 @@ import { CiLinkedin } from 'react-icons/ci'
 function Footer({isEnglish}) {
   return (
     <>
-        <footer className="footer mt-5 d-flex justify-content-around align-items-center fade-in flex-wrap">
+        <footer className="footer mt-5 d-flex justify-content-around align-items-center fade-in flex-wrap" id={isEnglish ? locales.en.menu[4] : locales.es.menu[4]}>
             <div className="contact-me text-center">
                 <h4>{isEnglish ? locales.en.footer.title : locales.es.footer.title}</h4>
                 <p>{isEnglish ? locales.en.footer.subtitle : locales.es.footer.subtitle}</p>

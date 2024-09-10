@@ -17,9 +17,9 @@ function Services({isEnglish,translation}) {
 
   return (
     <>
+      <div className="services_container mt-2" id={isEnglish ? translation.en.menu[1] : translation.es.menu[1]}>
       <TitleSection title={isEnglish ? translation.en.menu[1] : translation.es.menu[1]} />
-      <div className="services_container mt-2">
-        <div className="items-selector">
+        <div className="items-selector mt-2">
           <div className="item" onClick={() => setSelectionService('backend')}>
             <h3>Backend</h3>
           </div>
